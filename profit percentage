@@ -1,0 +1,10 @@
+#include<stdio.h>
+int main()
+{
+int cp,sp;
+double profit,pp;
+scanf("%d %d", &cp, &sp);
+profit=sp-cp;
+pp=(profit/cp)*100;
+printf("%.2f", pp);
+return 0;
