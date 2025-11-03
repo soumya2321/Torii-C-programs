@@ -1,0 +1,14 @@
+#include<math.h>
+int main()
+{
+    long n;
+    double m,o;
+    scanf("%lld",&n);
+    m = pow(2,n);
+    o = n*n; 
+    if(m>o)
+    printf("Yes");
+    else 
+    printf("No");
+    return 0;
+}
