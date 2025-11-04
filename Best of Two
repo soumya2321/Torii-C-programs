@@ -1,0 +1,15 @@
+#include<stdio.h>
+int main()
+{
+    int a1,a2,a3,b1,b2,b3;
+    scanf("%d %d %d %d %d %d",&a1,&a2,&a3,&b1,&b2,&b3);
+    int temp;
+    temp = a1;
+    if(a2<temp)
+    temp = a2;
+    if(a3<temp)
+…    else if(scoree>score)
+    printf("Bob");
+    else printf("Tie");
+
+}
