@@ -1,0 +1,15 @@
+#include<stdio.h>
+int main()
+{
+    int n,m;
+    float z;
+    scanf("%d %d",&n,&m);
+    z = n-(n*0.10);
+    if(z<m)
+    printf("ONLINE");
+    else if(z>m)
+    printf("DINING");
+    else
+    printf("EITHER");
+    return 0;
+}
