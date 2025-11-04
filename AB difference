@@ -1,0 +1,12 @@
+#include<stdio.h>
+int main()
+{
+    int A,B,x,sum,product;
+    scanf("%d %d",&A,&B);
+    sum = A+B;
+    product = A *B;
+
+    x = (abs(product - sum));
+    printf("%d",x);
+    return 0;
+}
