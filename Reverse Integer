@@ -1,0 +1,20 @@
+#include <stdio.h>
+int main() {
+    int n, rev = 0, rem;
+    scanf("%d", &n);
+    int isNegative = 0;
+    if (n < 0) {
+        isNegative = 1;
+        n = -n;   // Make positive
+    }
+    while (n > 0) {
+        rem = n % 10;
+        rev = rev * 10 + rem;
+        n /= 10;
+    }
+    if (isNegative)
+        rev = -rev;
+    printf("%d", rev);
+
+    return 0;
+}
