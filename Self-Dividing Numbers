@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int isSelfDividing(int n) {
+    int temp = n, digit;
+    while (temp > 0) {
+        digit = temp % 10;
+        if (digit == 0 || n % digit != 0)
+            return 0;
+        temp /= 10;
+    }
+    return 1;
+}
+
+int main() {
+    int A, B;
+    scanf("%d %d", &A, &B);
+
+    for (int i = A; i <= B; i++) {
+        if (isSelfDividing(i)) {
+            printf("%d ", i);
+        }
+    }
+    return 0;
+}
